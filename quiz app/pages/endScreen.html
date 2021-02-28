@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End screen</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="circle1 circle"></div>
+    <div class="circle2 circle"></div>
+    <div class="circle3 circle"></div>
+    <div class="circle4 circle"></div>
+    <div class="endScreen">
+        <h4 class="cardSetName">Card Set</h4>
+        <p class="score">0</p>
+        <p>current high score: <p class="high-score"></p></p>
+        <ul>
+            <li><button class="playAgain">play again</button></li>
+            <li><button class="exit" onclick="exit()">exit</button></li>
+        </ul>
+    </div>
+    <script>
+        const exit=()=>{
+            window.location.href = "../index.html";
+        }
+    </script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../script.js"></script>
+</html>

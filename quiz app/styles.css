@@ -1,0 +1,291 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f8ff;
+}
+
+button {
+  outline: none;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.circle {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: #caf2fc;
+  z-index: -1;
+}
+.circle1 {
+  left: -100px;
+  top: -100px;
+}
+
+.circle2 {
+  top: -100px;
+  right: 20%;
+}
+
+.circle3 {
+  bottom: 40px;
+  left: 20%;
+}
+
+.circle4 {
+  right: 0;
+  bottom: 0;
+}
+
+.optionScreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(44, 44, 44);
+}
+
+.optionScreen h1 {
+  position: relative;
+  font-size: 6.5rem;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.optionScreen ul {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.question-set {
+  list-style: none;
+  position: relative;
+}
+
+.question-set button {
+  background-color: #b7f1ff;
+  border-radius: 30px;
+  width: 80vw;
+  height: 5rem;
+  margin-bottom: 30px;
+  border: 1px solid #00769159;
+  box-shadow: 0px 1px 5px darkgray;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.question-set button:hover {
+  background-color: #b1ebfa;
+}
+
+.questionScreen {
+  position: absolute;
+  left: 5vw;
+  top: 5%;
+  height: 90%;
+  width: 90vw;
+  background-color: #c3dff8;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.clicked {
+  background-color: aquamarine;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.question {
+  position: relative;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  font-size: 1.8rem;
+  background: #ffffff;
+  font-weight: 500;
+  box-shadow: 0px 2px 5px darkgray;
+  padding: 30px;
+  border: 0.1px solid #707070;
+}
+
+.card li {
+  list-style: none;
+}
+.optionButtons {
+  position: relative;
+  height: 100%;
+  width: 70%;
+}
+.optionButtons ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.option {
+  margin-left: 12.5%;
+  padding: 15px;
+  position: relative;
+  width: 75%;
+  font-size: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px darkgray;
+  background: #ffffff;
+}
+
+.getInput {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+  width: 100%;
+}
+
+.otherButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  align-items: center;
+}
+
+.otherButtons button {
+  background-color: #ffffff;
+}
+
+.otherButtons .enter {
+  margin-top: 0px;
+  margin-bottom: 100px;
+  position: relative;
+  border-radius: 15px;
+  width: 80%;
+  box-shadow: 2px 2px 5px darkgray;
+  padding: 10px;
+}
+.otherButtons .enter svg {
+  height: 30px;
+}
+
+.otherButtons .enter h6 {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.otherButtons .enter p {
+  margin-top: 4px;
+}
+
+.otherButtons .exit {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 100;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.endScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.cardSetName {
+  background-color: rgba(122, 187, 244, 0.75);
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 400;
+  border-radius: 20px;
+}
+
+.score {
+  background-color: rgba(122, 187, 244, 0.75);
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 100px;
+  font-size: 1.5rem;
+}
+
+.endScreen p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.endScreen ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 70%;
+  justify-content: space-between;
+}
+.endScreen button {
+  margin-top: 20px;
+  padding: 30px;
+  font-size: 1.7rem;
+  font-weight: 200;
+  background-color: #cee8ff;
+  border-radius: 100px;
+}
+
+.endScreen .exit {
+  position: relative;
+  margin-right: 30px;
+}
+
+.selected {
+  background-color: rgb(149, 235, 146);
+}
+
+.correct {
+  background-color: rgb(88, 236, 69);
+}
+
+.wrong {
+  background: rgb(250, 62, 62);
+}
+
+@media screen and (max-width: 500px) and (min-width: 450px) {
+  .endScreen button {
+    font-size: 1.5rem;
+  }
+  .endScreen ul {
+    width: 80%;
+  }
+  .question {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .endScreen ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .question {
+    font-size: 1.4rem;
+  }
+}
